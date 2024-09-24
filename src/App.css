@@ -1,11 +1,13 @@
+/* src/App.css */
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background-color: black;
+  background-color: rgb(20, 20, 20);
   color: white;
-  font-family: Arial, sans-serif;
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
 }
@@ -17,8 +19,9 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem; /* Adjust padding to add space on the sides */
-  box-sizing: border-box; /* Ensure padding is included in the element's total width */
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+  height: 60px;
 }
 
 nav .logo {
@@ -54,10 +57,22 @@ section {
 }
 
 #about {
-  min-height: 100vh;
+  min-height: calc(100vh - 60px); /* Adjust height to account for navbar */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-top: 10px; /* Add padding to account for the navbar */
+}
+
+#about h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+#about p {
+  font-size: 1.5rem;
 }
 
 #projects {
@@ -77,6 +92,28 @@ section {
   width: 30%;
   box-sizing: border-box;
   border-radius: 8px;
+  text-align: left;
+}
+
+.project h2 {
+  margin-top: 0;
+}
+
+.project p {
+  margin: 0.5rem 0;
+}
+
+.project ul {
+  padding-left: 1.5rem;
+}
+
+.project a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
 }
 
 #contact {
