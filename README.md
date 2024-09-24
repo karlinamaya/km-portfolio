@@ -1,2 +1,8 @@
-<h1>Welcome to my portfolio!</h1>
-Website is currently under construction :)
+# Welcome to my portfolio!
+
+This website is currently under construction :)
+
+## Stay Connected
+Connect with me on [LinkedIn](https://www.linkedin.com/in/karlina-maya/) or reach out to me at karli.maya12@gmail.com for any inquiries or just to say hello!
+
+Thank you for visiting!
