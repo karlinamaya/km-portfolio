@@ -1,0 +1,45 @@
+#projects {
+  min-height: 100vh;
+}
+
+#projects h1 {
+  font-size: 2rem;
+}
+
+.project-grid {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.project {
+  background-color: #333;
+  padding: 20px;
+  margin: 10px;
+  width: 30%;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: left;
+}
+
+.project h2 {
+  margin-top: 0;
+}
+
+.project p {
+  margin: 0.5rem 0;
+}
+
+.project ul {
+  padding-left: 1.5rem;
+}
+
+.project a {
+  color: #61dafb;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
