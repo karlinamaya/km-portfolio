@@ -33,15 +33,15 @@ const Projects = () => {
           </div>
         </div>
         <div className="project">
-          <a href="https://github.com/karlinamaya/connect-four" target="_blank" rel="noreferrer noopener">
-            <img src="/images/snout.png" alt="Snout" />
-          </a>
+          <img src="/images/snout.png" alt="Snout" />
+          {/* <a href="" target="_blank" rel="noreferrer noopener"></a> */}
           <h2>Snout</h2>
-          <p>Designed the branding and UI for a conceptual animal adoption app</p>
+          <p>Designed the branding and UI for a conceptual animal adoption app (Link to project page coming soon!)</p>
           <div className="tech-buttons">
             <span className="tech-button">photoshop</span>
             <span className="tech-button">illustrator</span>
             <span className="tech-button">after effects</span>
+            <span className="tech-button">figma</span>
           </div>
         </div>
         <div className="project">
