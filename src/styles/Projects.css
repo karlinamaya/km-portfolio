@@ -1,10 +1,13 @@
 #projects {
-  min-height: 100vh;
+  /* Removed min-height to allow content to dictate height */
+  padding-top: 20px; /* Added padding to control top spacing */
+  padding-bottom: 20px; /* Added padding to control bottom spacing */
 }
 
 #projects h1 {
   font-size: 2.5rem;
-  margin-bottom: 85px;
+  margin-top: 10px; /* Reduced margin-top */
+  margin-bottom: 50px; /* Reduced margin-bottom */
   font-weight: 600;
 }
 
@@ -20,16 +23,16 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: 100px;
+  margin-top: 50px; /* Reduced margin-top */
   width: 90%;
   margin: 0 auto;
 }
 
 .project {
   background-color: #333;
-  padding: 15px;
-  margin: 10px;
-  width: 22%;
+  padding: 20px; /* Reduced padding */
+  margin: 20px;
+  width: 30%; /* Reduced width */
   box-sizing: border-box;
   border-radius: 10px;
   text-align: left;
@@ -41,6 +44,11 @@
   margin-bottom: 10px;
   display: block;
   margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+.project img:hover {
+  transform: scale(1.05);
 }
 
 .project h2 {
@@ -49,6 +57,7 @@
 
 .project p {
   margin: 0.5rem 0;
+  margin-bottom: 20px;
 }
 
 .project ul {
@@ -65,7 +74,9 @@
 }
 
 .slideshow-container {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
 }
 
@@ -74,31 +85,40 @@
   border-radius: 8px;
 }
 
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
+.slideshow-arrows {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.slideshow-arrows button {
+  background: none;
+  border: none;
   color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  font-size: 1rem;
+  cursor: pointer;
   user-select: none;
+  margin: 0 10px;
+}
+.slideshow-arrows button:hover {
+  color: #ccc;
 }
 
-.prev {
-  left: 0;
-  border-radius: 3px 0 0 3px;
+.tech-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 2px;
+  justify-content: center;
 }
 
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
+.tech-button {
+  background-color: rgb(36, 34, 34);
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 0.875rem;
+  font-weight: medium;
+  text-align: center;
+  user-select: none;
 }

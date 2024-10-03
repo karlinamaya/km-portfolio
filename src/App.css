@@ -1,7 +1,6 @@
 @import './styles/Navbar.css';
 @import './styles/About.css';
 @import './styles/Projects.css';
-@import './styles/Contact.css';
 
 html {
   scroll-behavior: smooth;
