@@ -7,10 +7,10 @@ const Navbar = () => {
       <div className="logo">
         <a href="#about">KM</a>
       </div>
-      <ul>
+      {/* <ul>
         <li><a href="#projects">projects</a></li>
         <li><a href="#contact">contact</a></li>
-      </ul>
+      </ul> */}
     </nav>
   );
 };

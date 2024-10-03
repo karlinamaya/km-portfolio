@@ -1,6 +1,6 @@
 import React from 'react';
 import { TypeAnimation } from 'react-type-animation';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
 import '../styles/About.css';
 
 const About = () => {
@@ -29,7 +29,7 @@ const About = () => {
             <FaLinkedin style={{ fontSize: 23, color: 'white', margin: '0 10px' }} />
           </a>
         </div>
-      </div>
+      </div><a href="#projects" className="view-projects-button">view projects</a>
     </section>
   );
 };
