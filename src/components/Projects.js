@@ -1,21 +1,6 @@
 import React, { useState } from 'react';
 
 const Projects = () => {
-  const [currentSlide, setCurrentSlide] = useState(0);
-  const businessCardsImages = [
-    '/images/businesscard1.png',
-    '/images/businesscard2.png',
-    '/images/businesscard3.png'
-  ];
-
-  const nextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % businessCardsImages.length);
-  };
-
-  const prevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + businessCardsImages.length) % businessCardsImages.length);
-  };
-
   return (
     <section id="projects">
       <h1>Projects</h1>
