@@ -10,9 +10,9 @@ const About = () => {
         <h1>Hi, I'm Karlina</h1>
         <p>I'm a <TypeAnimation
           sequence={[
-            'developer 💻',
-            1100,
             'designer 🎨',
+            1100,
+            'developer 💻',
             1100,
             'researcher 🔎',
             1100,
