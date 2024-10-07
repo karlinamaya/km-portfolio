@@ -42,17 +42,6 @@ const Projects = () => {
             <span className="tech-button">spotify api</span>
           </div>
         </div>
-        {/* <div className="project">
-          <div className="slideshow-container">
-            <img src={businessCardsImages[currentSlide]} alt="Business Cards" />
-            <div className="slideshow-arrows">
-              <button onClick={prevSlide} className="prev">&lsaquo;</button>
-              <button onClick={nextSlide} className="next">&rsaquo;</button>
-            </div>
-          </div>
-          <h2>Business Cards</h2>
-          <p>Description</p>
-        </div> */}
       </div>
     </section>
   );
