@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Link } from 'react-router-dom';
+import '../styles/Projects.css';
 
 const Projects = () => {
   return (
@@ -18,8 +20,9 @@ const Projects = () => {
           </div>
         </div>
         <div className="project">
-          <img src="/images/snout.png" alt="Snout" />
-          {/* <a href="" target="_blank" rel="noreferrer noopener"></a> */}
+          <Link to="/snout">
+            <img src="/images/snout.png" alt="Snout" />
+          </Link>
           <h2>Snout</h2>
           <p>Designed the branding and UI for a conceptual animal adoption app (Link to project page coming soon!)</p>
           <div className="tech-buttons">

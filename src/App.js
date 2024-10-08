@@ -1,17 +1,23 @@
 import React from 'react';
-import { TypeAnimation } from 'react-type-animation';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import Projects from './components/Projects';
+import Snout from './components/Snout';
 import './App.css';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <About />
-      <Projects />
-    </div>
+    <Router>
+      <div>
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<><About /><Projects /></>} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/snout" element={<Snout />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

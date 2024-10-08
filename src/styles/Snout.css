@@ -1,0 +1,128 @@
+.snout-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: rgb(20, 20, 20);
+  color: white;
+  max-width: 1700px;
+  margin: 0 auto;
+}
+
+.snout-header {
+  width: 100%;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.snout-header img {
+  margin-top: 100px;
+  height: auto;
+  width: 70%;
+  border-radius: 6px;
+}
+
+.snout-page section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5px 0;
+  width: 80%;
+}
+
+.snout-page h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.snout-page h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.snout-page p {
+  font-size: 1.2rem;
+  text-align: left;
+  max-width: 550px;
+}
+
+.snout-page .image-content {
+  width: 45%;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.snout-page .image-content img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+}
+
+.snout-page .wireframe-p {
+  width: 100%;
+}
+
+.wireframes-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5px 0;
+  width: 100%;
+}
+
+.wireframes-section .text-and-image {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.wireframes-section .image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.wireframes-section .image-content {
+  width: 50%;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.wireframes-section .image-content img {
+  max-width: 80%;
+  height: auto;
+  margin-bottom: 30px;
+}
+
+.image-wrapper .image-carousel {
+  margin-top: 70px;
+  display: flex;
+  justify-content: center;
+}
+
+.image-carousel {
+  width: 100%;
+  height: auto;
+}
+
+.text-and-carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 60px;
+}
+
+.image-carousel-wrapper {
+  width: 50%;
+}
+
+.wireframe-p2 {
+  width: 41%;
+}
