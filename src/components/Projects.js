@@ -33,11 +33,25 @@ const Projects = () => {
           </div>
         </div>
         <div className="project">
+          <a href="https://github.com/karlinamaya/wildlife-tracker" target="_blank" rel="noreferrer noopener">
+            <img src="/images/wildlife-tracker.png" alt="Wildlife Tracker" />
+          </a>
+          <h2>Wildlife Tracker</h2>
+          <p>Developed a web app to track wildllife sightings around UCF's campus</p>
+          <div className="tech-buttons">
+            <span className="tech-button">javascript</span>
+            <span className="tech-button">nodejs</span>
+            <span className="tech-button">react</span>
+            <span className="tech-button">google maps api</span>
+            <span className="tech-button">mongodb</span>
+          </div>
+        </div>
+        <div className="project">
           <a href="https://github.com/karlinamaya/AmplifyHER" target="_blank" rel="noreferrer noopener">
             <img src="/images/amplifyher.png" alt="AmplifyHER" />
           </a>
           <h2>AmplifyHER</h2>
-          <p>Created a genre-based playlist generator aimed at uplifing underrepresented artists for <a href="https://www.winghacks.com/" target="_blank" rel="noreferrer noopener">WiNGHacks</a></p>
+          <p>Created a genre-based playlist generator aimed at uplifing underrepresented artists</p>
           <div className="tech-buttons">
             <span className="tech-button">javascript</span>
             <span className="tech-button">python</span>

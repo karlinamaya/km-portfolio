@@ -20,7 +20,7 @@
 .project-grid {
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   padding-top: 80px;
   width: 80%;
   margin: 0 auto;
@@ -28,7 +28,7 @@
 
 .project {
   background-color: #333;
-  padding: 30px;
+  padding: 20px;
   margin: 20px;
   width: 30%;
   box-sizing: border-box;
@@ -69,37 +69,6 @@
 
 .project a:hover {
   text-decoration: underline;
-}
-
-.slideshow-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.slideshow-container img {
-  width: 100%;
-  border-radius: 8px;
-}
-
-.slideshow-arrows {
-  display: flex;
-  justify-content: center;
-  margin-top: 10px;
-}
-
-.slideshow-arrows button {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 1rem;
-  cursor: pointer;
-  user-select: none;
-  margin: 0 10px;
-}
-.slideshow-arrows button:hover {
-  color: #ccc;
 }
 
 .tech-buttons {
