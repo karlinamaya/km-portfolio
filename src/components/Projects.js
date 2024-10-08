@@ -24,7 +24,7 @@ const Projects = () => {
             <img src="/images/snout.png" alt="Snout" />
           </Link>
           <h2>Snout</h2>
-          <p>Designed the branding and UI for a conceptual animal adoption app (Link to project page coming soon!)</p>
+          <p>Designed the branding and UI for a conceptual animal adoption app</p>
           <div className="tech-buttons">
             <span className="tech-button">photoshop</span>
             <span className="tech-button">illustrator</span>
