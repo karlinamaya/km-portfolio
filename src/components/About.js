@@ -4,6 +4,19 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import '../styles/About.css';
 
 const About = () => {
+
+  const handleNavigation = (section, offset = 100) => {
+    const scrollToSection = () => {
+      const element = document.getElementById(section);
+      if (element) {
+        const yOffset = offset;
+        const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
+    };
+    setTimeout(scrollToSection, 0);
+  };
+
   return (
     <section id="about">
       <div className="about-container">
@@ -30,7 +43,7 @@ const About = () => {
           </a>
         </div>
       </div>
-      <a href="#projects" className="view-projects-button">
+      <a href="#projects" className="view-projects-button" onClick={() => handleNavigation('projects', -100)}>
         view projects
       </a>
     </section>
