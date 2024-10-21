@@ -70,7 +70,6 @@ const Snout = () => {
           </div>
         </div>
         
-        {/* Carousel for additional images */}
         <div className="text-and-carousel">
           <div className="image-carousel-wrapper">
             <Carousel
@@ -107,7 +106,7 @@ const Snout = () => {
           </div>
           <div className="wireframe-p2">
             <p>
-            Additionally, I created landing page prototypes designed for desktop, tablet, and smartphone devices. These prototypes are tailored to each screen size, ensuring a responsive and cohesive design that adapts to various platforms while maintaining the core visual elements of the Snout app.
+            Additionally, I created landing page prototypes designed for desktop, tablet, and smartphone devices. These prototypes are tailored to each screen size, ensuring a cohesive design that adapts to various platforms.
             </p>
           </div>
         </div>
@@ -122,7 +121,7 @@ const Snout = () => {
           </p>
         </div>
         <div className="image-content">
-          <img src="/images/snout-images/snout-landing.png" alt="Wireframes" />
+          <img src="/images/snout-images/snout-landing.png" alt="Landing Page"/>
         </div>
       </section>
 
@@ -131,11 +130,11 @@ const Snout = () => {
         <div className="text-content">
           <h2>Sample Web Logos</h2>
           <p>
-          Along with the wireframes representing Snout's structure, I created potential web logos for the app. Snout's purpose is to provide a service that allows you to not only adopt animals, but shop for supplies and get in touch with local veterinarians as well. In order to account for the all-encompassing nature of Snout, I designed a variety of web logos that could be incorporated into the app's UI.
+          Along with the wireframes representing Snout's structure, I created potential web logos for the app. Snout's purpose is to provide a service that allows you to not only adopt animals, but it has the potential to allow users to shop for supplies and get in touch with local veterinarians as well. In order to account for the all-encompassing nature of Snout, I designed a variety of web logos that could be incorporated into the app's UI.
           </p>
         </div>
         <div className="image-content">
-          <img src="/images/snout-images/web-logos1.png" alt="Wireframes" />
+          <img src="/images/snout-images/web-logos1.png" alt="Web Logos" />
         </div>
       </section>
 
@@ -151,7 +150,7 @@ const Snout = () => {
           </p>
         </div>
         <div className="image-content">
-          <img src="/images/snout-images/infographic-snout.png" alt="Wireframes" />
+          <img src="/images/snout-images/infographic-snout.png" alt="Infographic" />
         </div>
       </section>
     
@@ -177,7 +176,7 @@ const Snout = () => {
           </p>
         </div>
         <div className="image-content">
-          <img src="/images/snout-images/web-banners.jpg" alt="Wireframes" />
+          <img src="/images/snout-images/web-banners.jpg" alt="Web Banners" />
         </div>
       </section>
     </div>
