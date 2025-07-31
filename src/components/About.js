@@ -32,12 +32,15 @@ const About = () => {
         </h1>
         <div className="ux-designer-tagline">
         <p>
-          I'm a UX Designer with a deep passion for creating <span className="gradient-text">intuitive</span> and <span className="gradient-text">accessible</span> user experiences.
+          Nice to meet you! I'm passionate about creating <span className="gradient-text">intuitive</span> and <span className="gradient-text">accessible</span> user experiences.
         </p>
         </div>
         <div className="social-icons">
           <a href="https://www.linkedin.com/in/karlina-maya/" target="_blank" rel="noopener noreferrer">
             <FaLinkedin style={{ fontSize: 23, color: 'white', margin: '0 10px' }} />
+          </a>
+          <a href="https://github.com/karlinamaya" target="_blank" rel="noopener noreferrer">
+            <FaGithub style={{ fontSize: 23, color: 'white', margin: '0 10px' }} />
           </a>
         </div>
       </div>
