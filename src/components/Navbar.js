@@ -4,32 +4,36 @@ import { useNavigate } from 'react-router-dom';
 const Navbar = () => {
   const navigate = useNavigate();
 
-  const handleNavigation = (section, offset = 100) => {
+  const handleNavigation = (section) => {
     const scrollToSection = () => {
       const element = document.getElementById(section);
       if (element) {
-        const yOffset = offset; 
-        const y = element.getBoundingClientRect().top + window.pageYOffset - yOffset;
-        window.scrollTo({ top: y, behavior: 'smooth' });
+        // scroll-margin-top from CSS will ensure the heading is not hidden
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
       }
     };
-  
+
     if (window.location.pathname !== '/') {
       navigate('/');
-      setTimeout(() => {
-        scrollToSection();
-      }, 100);
+      setTimeout(scrollToSection, 120);
     } else {
-      setTimeout(scrollToSection, 0);
+      scrollToSection();
     }
   };
-  
 
   return (
     <nav>
       <ul>
-        <li><a href="#about" onClick={() => handleNavigation('about')}>home</a></li>
-        <li><a href="#projects" onClick={() => handleNavigation('projects', -100)}>projects</a></li>
+        <li>
+          <a href="#about" onClick={(e) => { e.preventDefault(); handleNavigation('about'); }}>
+            home
+          </a>
+        </li>
+        <li>
+          <a href="#projects" onClick={(e) => { e.preventDefault(); handleNavigation('projects'); }}>
+            projects
+          </a>
+        </li>
       </ul>
     </nav>
   );

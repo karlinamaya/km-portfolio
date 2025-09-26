@@ -19,43 +19,46 @@
 
 .project-grid {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: nowrap;
-  padding-top: 80px;
-  width: 80%;
+  justify-content: center;
+  align-items: stretch;
+  flex-wrap: wrap; /* allow wrapping on smaller screens */
+  gap: 24px;
+  padding-top: 64px;
+  width: 90%;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
 .project {
   background-color: #333;
   padding: 20px;
-  margin: 20px;
   width: 30%;
+  min-width: 280px;
+  max-width: 420px;
   box-sizing: border-box;
   border-radius: 10px;
   text-align: left;
+  margin: 0; /* spacing handled by gap */
 }
 
 .project img {
-  width:85%;
+  width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
   display: block;
-  margin: 0 auto;
   transition: transform 0.3s ease;
 }
 
 .project img:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 .project h2 {
-  margin-top: 20px;
+  margin-top: 16px;
 }
 
 .project p {
-  margin: 0.5rem 0;
-  margin-bottom: 20px;
+  margin: 0.5rem 0 20px 0;
 }
 
 .project ul {
@@ -85,7 +88,53 @@
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 0.875rem;
-  font-weight: medium;
+  font-weight: 500;
   text-align: center;
   user-select: none;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  #projects h1 {
+    font-size: 2.4rem;
+  }
+  .project {
+    width: 45%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .project-grid {
+    width: 92%;
+    padding-top: 36px;
+    gap: 16px;
+  }
+  #projects h1 {
+    font-size: 2rem;
+  }
+  .project {
+    width: 100%;
+    min-width: 0;
+  }
+  .project h2 {
+    text-align: center;
+    margin-top: 12px;
+    font-size: 1.2rem;
+  }
+  .project p {
+    text-align: center;
+    font-size: 0.98rem;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 420px) {
+  .tech-buttons {
+    gap: 8px;
+  }
+  .tech-button {
+    font-size: 0.82rem;
+    padding: 4px 8px;
+  }
 }

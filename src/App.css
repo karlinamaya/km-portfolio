@@ -2,6 +2,19 @@
 @import './styles/About.css';
 @import './styles/Projects.css';
 
+:root {
+  /* extra offset so headings aren't under the blurred navbar */
+  --nav-offset: 0px;
+}
+
+@media (max-width: 1024px) {
+  :root { --nav-offset: 68px; }
+}
+
+@media (max-width: 768px) {
+  :root { --nav-offset: 64px; }
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -17,4 +30,19 @@ body {
 section {
   padding: 100px 20px;
   text-align: center;
+  scroll-margin-top: var(--nav-offset); /* ensures section titles clear the navbar */
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  section {
+    padding: 88px 18px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  section {
+    padding: 76px 14px;
+  }
 }

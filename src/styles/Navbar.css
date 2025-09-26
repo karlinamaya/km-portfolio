@@ -5,15 +5,35 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.85rem 1.25rem;
   box-sizing: border-box;
   height: 60px;
+  z-index: 1000;
+
+  /* Improve readability on mobile over content */
+  background: rgba(20, 20, 20, 0.75);
+  backdrop-filter: saturate(180%) blur(10px);
+  -webkit-backdrop-filter: saturate(180%) blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-left: auto;
+  gap: 1rem;
+}
+
+nav ul li {
+  margin: 0;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   cursor: pointer;
 }
 
@@ -27,20 +47,37 @@ nav .logo a {
   text-decoration: none;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  padding: 0;
-  margin: 0;
-  margin-left: auto;
+/* Tablet */
+@media (max-width: 1024px) {
+  nav {
+    padding: 0.75rem 1rem;
+    height: 56px;
+  }
+  nav ul li a {
+    font-size: 1rem;
+  }
 }
 
-nav ul li {
-  margin: 0 1rem;
+/* Mobile */
+@media (max-width: 768px) {
+  nav {
+    padding: 0.6rem 0.9rem;
+    height: 54px;
+  }
+  nav ul {
+    gap: 0.75rem;
+  }
+  nav ul li a {
+    font-size: 0.98rem;
+  }
 }
 
-nav ul li a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
+/* Small mobile */
+@media (max-width: 420px) {
+  nav ul {
+    gap: 0.6rem;
+  }
+  nav ul li a {
+    font-size: 0.94rem;
+  }
 }

@@ -20,6 +20,7 @@
   margin-top: 100px;
   height: auto;
   width: 70%;
+  max-width: 1200px;
   border-radius: 6px;
 }
 
@@ -29,6 +30,7 @@
   align-items: flex-start;
   margin: 5px 0;
   width: 80%;
+  gap: 24px;
 }
 
 .snout-page h1 {
@@ -39,15 +41,16 @@
 }
 
 .snout-page h2 {
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   margin-bottom: 10px;
   text-align: left;
 }
 
 .snout-page p {
-  font-size: 1.2rem;
+  font-size: 1.08rem;
   text-align: left;
   max-width: 550px;
+  line-height: 1.6;
 }
 
 .snout-page .image-content {
@@ -79,6 +82,7 @@
   justify-content: space-between;
   width: 100%;
   margin-top: 20px;
+  gap: 24px;
 }
 
 .wireframes-section .image-wrapper {
@@ -117,6 +121,7 @@
   justify-content: space-between;
   align-items: flex-start;
   margin-top: 60px;
+  gap: 24px;
 }
 
 .image-carousel-wrapper {
@@ -126,4 +131,96 @@
 .wireframe-p2 {
   width: 36%;
   margin-right: 28px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .snout-header img {
+    width: 85%;
+    margin-top: 90px;
+  }
+  .snout-page section {
+    width: 88%;
+  }
+  .snout-page h2 {
+    font-size: 2rem;
+  }
+  .snout-page p {
+    font-size: 1.02rem;
+  }
+  .wireframes-section .image-content img {
+    max-width: 90%;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .snout-header img {
+    width: 100%;
+    margin-top: 80px;
+    border-radius: 8px;
+  }
+
+  .snout-page section {
+    width: 92%;
+    flex-direction: column;
+    align-items: center;
+    gap: 14px;
+  }
+
+  .snout-page h2 {
+    font-size: 1.6rem;
+    text-align: center;
+  }
+
+  .snout-page p {
+    font-size: 0.98rem;
+    text-align: center;
+    max-width: none;
+    width: 100%;
+  }
+
+  .snout-page .image-content,
+  .wireframes-section .image-content {
+    width: 100% !important;
+    margin-top: 18px;
+  }
+
+  .snout-page .image-content img,
+  .wireframes-section .image-content img {
+    max-width: 100%;
+  }
+
+  .wireframes-section .text-and-image {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-carousel-wrapper {
+    width: 100%;
+  }
+
+  .text-and-carousel {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 36px;
+  }
+
+  .wireframe-p2 {
+    width: 100%;
+    margin-right: 0;
+    margin-top: 8px;
+    text-align: center;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 420px) {
+  .snout-page h2 {
+    font-size: 1.45rem;
+  }
+  .image-wrapper .image-carousel {
+    margin-top: 40px;
+  }
 }

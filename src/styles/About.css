@@ -14,6 +14,9 @@
   border-radius: 30px;
   overflow: hidden;
   box-sizing: border-box;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .about-container::before {
@@ -28,11 +31,11 @@
   background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
   background-size: 300% 300%;
   animation: gradient-border 3s ease-in-out infinite;
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
-  mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: subtract;
@@ -40,15 +43,9 @@
 }
 
 @keyframes gradient-border {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
 
 #about h1 {
@@ -62,10 +59,10 @@
 }
 
 .ux-designer-tagline {
-  width: 65%; /* Set fixed width to make sure the text doesn't stretch across the screen */
-  max-width: 500px; /* Optional: Limit the width on large screens */
-  margin: 0 auto; /* Center align the tagline */
-  padding: 0px 0;
+  width: 65%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .gradient-text {
@@ -79,12 +76,8 @@
 }
 
 @keyframes gradientLoop {
-  0% {
-    background-position: 0% 50%;
-  }
-  100% {
-    background-position: 200% 50%;
-  }
+  0% { background-position: 0% 50%; }
+  100% { background-position: 200% 50%; }
 }
 
 .wave span {
@@ -95,24 +88,15 @@
 }
 
 @keyframes wave-bounce {
-  0% {
-    opacity: 0;
-    transform: translateY(10px) scale(0.95);
-  }
-  50% {
-    opacity: 1;
-    transform: translateY(-5px) scale(1.1);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0) scale(1);
-  }
+  0% { opacity: 0; transform: translateY(10px) scale(0.95); }
+  50% { opacity: 1; transform: translateY(-5px) scale(1.1); }
+  100% { opacity: 1; transform: translateY(0) scale(1); }
 }
 
 .view-projects-button {
   display: inline-block;
   margin-top: 60px;
-  padding: 10px 20px;
+  padding: 12px 22px;
   font-size: 16px;
   color: white;
   text-decoration: none;
@@ -135,11 +119,11 @@
   background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
   background-size: 300% 300%;
   animation: gradient-border 3s ease-in-out infinite;
-  -webkit-mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  -webkit-mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
-  mask: 
-    linear-gradient(#fff 0 0) content-box, 
+  mask:
+    linear-gradient(#fff 0 0) content-box,
     linear-gradient(#fff 0 0);
   -webkit-mask-composite: destination-out;
   mask-composite: subtract;
@@ -155,4 +139,61 @@
   transform: scale(1.05);
   border-radius: 10px;
   background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .about-container {
+    padding: 60px 36px;
+    max-width: 720px; /* keep it comfortably narrow on tablets */
+  }
+  #about h1 {
+    font-size: 2.75rem;
+  }
+  #about p {
+    font-size: 1.1rem;
+  }
+  .ux-designer-tagline {
+    width: 80%;
+    max-width: 640px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .about-container {
+    padding: 42px 20px;
+    border-radius: 22px;
+    margin: 0 12px;
+    max-width: 600px;
+  }
+  .about-container::before {
+    border-radius: 22px;
+  }
+  #about h1 {
+    font-size: 2.2rem;
+  }
+  #about p {
+    font-size: 1.02rem;
+    line-height: 1.5;
+  }
+  .ux-designer-tagline {
+    width: 92%;
+    max-width: none;
+  }
+  .view-projects-button {
+    margin-top: 36px;
+    padding: 10px 18px;
+    font-size: 15px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 420px) {
+  #about h1 {
+    font-size: 2rem;
+  }
+  #about p {
+    font-size: 0.98rem;
+  }
 }
