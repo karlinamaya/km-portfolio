@@ -1,17 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { TypeAnimation } from 'react-type-animation';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import '../styles/About.css';
 
 const About = () => {
-
-  const handleNavigation = (section) => {
-    const el = document.getElementById(section);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth', block: 'start' }); // honors scroll-margin-top
-    }
-  };
-
   return (
     <section id="about">
       <div className="about-container">
@@ -40,13 +33,9 @@ const About = () => {
           </a>
         </div>
       </div>
-      <a
-        href="#projects"
-        className="view-projects-button"
-        onClick={(e) => { e.preventDefault(); handleNavigation('projects'); }}
-      >
+      <Link to="/projects" className="view-projects-button">
         view projects
-      </a>
+      </Link>
     </section>
   );
 };
