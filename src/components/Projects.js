@@ -14,10 +14,10 @@ const Projects = () => {
           <h2>Snout</h2>
           <p>Designed the branding and UI for a conceptual animal adoption app</p>
           <div className="tech-buttons">
+            <span className="tech-button">figma</span>
             <span className="tech-button">photoshop</span>
             <span className="tech-button">illustrator</span>
             <span className="tech-button">after effects</span>
-            <span className="tech-button">figma</span>
           </div>
         </div>
         <div className="project">
@@ -26,11 +26,12 @@ const Projects = () => {
             <img src="/images/connectfour.png" alt="Connect Four" />
           </a>
           <h2>Connect Four</h2>
-          <p>Developed a web-based Connect Four game with interactive gameplay</p>
+          <p>Designed and developed a web-based Connect Four game with interactive gameplay</p>
           <div className="tech-buttons">
             <span className="tech-button">javascript</span>
             <span className="tech-button">html</span>
             <span className="tech-button">bootstrap css</span>
+            <span className="tech-button">figma</span>
           </div>
         </div>
         <div className="project">
@@ -38,7 +39,7 @@ const Projects = () => {
             <img src="/images/wildlife-tracker.png" alt="Wildlife Tracker" />
           </a>
           <h2>Wildlife Tracker</h2>
-          <p>Developed a web app to track wildllife sightings around UCF's campus</p>
+          <p>Created a web app to track wildllife sightings around UCF's campus</p>
           <div className="tech-buttons">
             <span className="tech-button">javascript</span>
             <span className="tech-button">nodejs</span>
