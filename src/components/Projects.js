@@ -7,7 +7,7 @@ const Projects = () => {
     <section id="projects">
       <h1>Projects</h1>
       <div className="project-grid">
-        <div className="project">
+        <div className="project fade-in" style={{ animationDelay: '0s' }}>
           <Link to="/snout">
             <img src="/images/snout.png" alt="Snout" />
           </Link>
@@ -20,7 +20,7 @@ const Projects = () => {
             <span className="tech-button">after effects</span>
           </div>
         </div>
-        <div className="project">
+        <div className="project fade-in" style={{ animationDelay: '0.15s' }}>
           {/* <a href="https://github.com/karlinamaya/connect-four" target="_blank" rel="noreferrer noopener"> */}
           <a href="https://karlinamaya.github.io/connect-four/" target="_blank" rel="noreferrer noopener">
             <img src="/images/connectfour.png" alt="Connect Four" />
@@ -34,7 +34,7 @@ const Projects = () => {
             <span className="tech-button">figma</span>
           </div>
         </div>
-        <div className="project">
+        <div className="project fade-in" style={{ animationDelay: '0.3s' }}>
           <a href="https://devpost.com/software/knights-wildlife-tracker" target="_blank" rel="noreferrer noopener">
             <img src="/images/wildlife-tracker.png" alt="Wildlife Tracker" />
           </a>
