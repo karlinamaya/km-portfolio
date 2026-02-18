@@ -106,7 +106,7 @@ const Snout = () => {
           </div>
           <div className="wireframe-p2">
             <p>
-            Additionally, I created landing page prototypes designed for desktop, tablet, and smartphone devices. These prototypes are tailored to each screen size, ensuring a cohesive design that adapts to various platforms.
+            Additionally, I created landing page wireframes designed for desktop, tablet, and smartphone devices. These wireframes are tailored to each screen size, ensuring a cohesive design that adapts to various platforms.
             </p>
           </div>
         </div>
@@ -117,7 +117,7 @@ const Snout = () => {
         <div className="text-content">
           <h2>Landing Page</h2>
           <p>
-          Once I had established a framework for Snout, I moved on to designing the landing page. My goal was to highlight the main mission of Snout and showcase a glimpse of the app's UI. Using Snout's logo as a framework for the surrounding brand, I focused on minimalism and cohesiveness in my design and content writing.
+          Once I had established a framework for Snout, I moved on to creating high-fidelity designs of the landing page. My goal was to highlight the main mission of Snout and showcase a glimpse of the app's UI. Using Snout's logo as a framework for the surrounding brand, I focused on minimalism and cohesiveness in my design and content writing.
           </p>
         </div>
         <div className="image-content">
